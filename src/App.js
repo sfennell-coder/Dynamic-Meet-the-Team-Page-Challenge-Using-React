@@ -1,5 +1,6 @@
 import React from 'react';
-import Gallery from 'gallery';
+import Header from './header';
+import Gallery from './gallery';
 
 const members = [ // Array at the center of src files for ease of altering or editing members
     {id:1, name: 'Hank Williams', details:'CEO',
@@ -15,9 +16,9 @@ const members = [ // Array at the center of src files for ease of altering or ed
 function App() {
     return(
         <div  className='App'>
+            <Header title='Meet the Team Members'/>
             <Gallery members={members}/>
         </div>
     )
 }
-
 export default App;
